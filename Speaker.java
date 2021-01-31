@@ -31,7 +31,7 @@ class Speaker //
 	{
 		if(isConnected())
 		{
-			if(currentVol>minVol)
+			if(currentVol>minVol)//if(currentVol<minVol)This condition is false if you use it
 			{
 				currentVol=currentVol-5;
 				System.out.println("decreasing the volume " +currentVol);
