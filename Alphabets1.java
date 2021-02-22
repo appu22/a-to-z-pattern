@@ -1,5 +1,7 @@
 package com.xworkz.xworkzapp.aptitude.nikunj.alphabet;
+
 public class Alphabets1 {
+	
 	public static void main(String a[]) {
 		aAlphabet();
 		System.err.println();
@@ -23,7 +25,8 @@ public class Alphabets1 {
 		System.out.println();
 		kAlphabet();
 		System.out.println();
-		//lAlphabet();
+		lAlphabet();
+		System.out.println();
 		mAlphabet();
 		System.out.println();
 		nAlphabet();
@@ -52,9 +55,8 @@ public class Alphabets1 {
 		System.out.println();
 		zAlphabet();
 	}
-
+	static int n = 7, mid = n / 2;
 	public static void aAlphabet() {
-		int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i + j == mid || j - i == mid || i == mid || j == 0 && i != 0 && mid < i || j == n - 1 && mid < i) {
@@ -68,12 +70,11 @@ public class Alphabets1 {
 	}
 
 	public static void bAlphabet() {
-		int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 && j != n - 1 || j == 0 || i == n - 1 && j != n - 1 || i == mid
 						|| j == n - 1 && i != 0 && i != (n - 1)) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -82,12 +83,12 @@ public class Alphabets1 {
 		}
 	}
 
+//c
 	public static void cAlphabet() {
-		int n = 5;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 || j == 0 || i == (n - 1)) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -96,13 +97,13 @@ public class Alphabets1 {
 		}
 	}
 
+//d
 	public static void dAlphabet() {
-		int n = 5;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 && j != (n - 1) || j == 0 || i == (n - 1) && j != (n - 1)
 						|| j == (n - 1) && i != 0 && i != (n - 1)) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -113,12 +114,12 @@ public class Alphabets1 {
 		}
 	}
 
+//e
 	public static void eAlphabet() {
-		int n = 9, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 || j == 0 || i == mid || i == (n - 1)) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -129,12 +130,12 @@ public class Alphabets1 {
 		}
 	}
 
+//f
 	public static void fAlphabet() {
-		int n = 9, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 || j == 0 || i == mid) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -145,13 +146,13 @@ public class Alphabets1 {
 		}
 	}
 
+//g
 	public static void gAlphabet() {
-		int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 && mid >= j || j == 0 || i == (n - 1) && mid >= j || mid == j && mid <= i
 						|| mid == i && mid < j || j == (n - 1) && mid <= i) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -162,12 +163,12 @@ public class Alphabets1 {
 		}
 	}
 
+//h
 	public static void hAlphabet() {
-		int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == mid || j == 0 || j == (n - 1)) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -178,12 +179,13 @@ public class Alphabets1 {
 		}
 	}
 
+//i
 	public static void iAlphabet() {
-		int n = 9, mid = n / 2;
+	//	int n = 9, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 || j == mid || i == n - 1) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -194,12 +196,13 @@ public class Alphabets1 {
 		}
 	}
 
+//j
 	public static void jAlphabet() {
-		int n = 7, mid = n / 2;
+		//int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 || j == mid || i == (n - 1) && mid >= j || j == 0 && mid <= i) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -210,12 +213,13 @@ public class Alphabets1 {
 		}
 	}
 
+//k
 	public static void kAlphabet() {
-		int n = 5, mid = n / 2;
+		//int n = 5, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j == 0 || i + j == mid || i - j == mid) {
-					System.out.print(i + "" + j + " ");
+					System.out.print("* ");
 				} else {
 					System.out.print("   ");
 				}
@@ -226,12 +230,29 @@ public class Alphabets1 {
 		}
 	}
 
+	public static void lAlphabet() {
+		//int n = 9;
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (j == 0 || i == n - 1) {
+					System.out.print("* ");
+				} else {
+					System.out.print("   ");
+				}
+
+			}
+			System.out.println();
+
+		}
+	}
+
+//m
 	public static void mAlphabet() {
-		int n = 9, mid = n / 2;
+		//int n = 9, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j == 0 || i == j && mid >= i || i + j == n - 1 && mid >= i || j == n - 1) {
-					System.out.print("*  ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -242,12 +263,13 @@ public class Alphabets1 {
 		}
 	}
 
+//n
 	public static void nAlphabet() {
-		int n = 9;
+		//int n = 9;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j == 0 || i == j || j == (n - 1)) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -258,13 +280,14 @@ public class Alphabets1 {
 		}
 	}
 
+//o
 	public static void oAlphabet() {
-		int n = 7;
+		//int n = 7;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j == 0 && i != 0 && i != (n - 1) || i == 0 && j != 0 && j != n - 1
 						|| j == n - 1 && i != 0 && i != n - 1 || i == n - 1 && j != n - 1 && j != 0) {
-					System.out.print("*  ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -275,12 +298,13 @@ public class Alphabets1 {
 		}
 	}
 
+//p
 	public static void pAlphabet() {
-		int n = 9, mid = n / 2;
+		//int n = 9, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 || j == 0 || i == mid || j == n - 1 && mid >= i) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -291,13 +315,14 @@ public class Alphabets1 {
 		}
 	}
 
+//q
 	public static void qAlphabet() {
-		int n = 5, mid = n / 2;
+		//int n = 5, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j == 0 && i != n - 1 && mid >= i || i == 0 && j != 0 && mid >= j || mid == j && mid >= i
 						|| mid == i && mid >= j || i == j && mid <= i) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -308,12 +333,13 @@ public class Alphabets1 {
 		}
 	}
 
+//r
 	public static void rAlphabet() {
-		int n = 5, mid = n / 2;
+		//int n = 5, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 || j == 0 || i == mid && j != n - 1 || j == n - 1 && i != mid) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -324,13 +350,14 @@ public class Alphabets1 {
 		}
 	}
 
+//s
 	public static void sAlphabet() {
-		int n = 7, mid = n / 2;
+		//int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j == 0 && i != 0 && mid >= i || i == 0 && j != 0 || mid == i || j == n - 1 && mid < i && i != n - 1
 						|| i == n - 1 && j != n - 1) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -341,12 +368,13 @@ public class Alphabets1 {
 		}
 	}
 
+//t
 	public static void tAlphabet() {
-		int n = 7, mid = n / 2;
+		//int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 || j == mid) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -355,13 +383,14 @@ public class Alphabets1 {
 			System.out.println();
 
 		}
-	}
+	}// u
+
 	public static void uAlphabet() {
-		int n = 7, mid = n / 2;
+		//int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j == 0 && i != n - 1 || j == n - 1 && i != n - 1 || i == n - 1 && j != 0 && j != n - 1) {
-					System.out.print(i + "" + j + " ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -370,12 +399,13 @@ public class Alphabets1 {
 		}
 	}
 
+//v
 	public static void vAlphabet() {
-		int n = 7, mid = n / 2;
+		//int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j == i && mid > i || i + j == n - 1 && mid >= i) {
-					System.out.print(i + "" + j + " ");
+					System.out.print("* ");
 				} else {
 					System.out.print("   ");
 				}
@@ -386,12 +416,13 @@ public class Alphabets1 {
 		}
 	}
 
+//w
 	public static void wAlphabet() {
-		int n = 7, mid = n / 2;
+		//int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j == 0 || j == n - 1 || i == j && mid <= i || i + j == n - 1 && mid >= j) {
-					System.out.print("*  ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
@@ -400,14 +431,14 @@ public class Alphabets1 {
 			System.out.println();
 
 		}
-	}
+	}// x
 
 	public static void xAlphabet() {
-		int n = 7, mid = n / 2;
+	//	int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == j || i + j == n - 1) {
-					System.out.print(i + "" + j + " ");
+					System.out.print("* ");
 				} else {
 					System.out.print("   ");
 				}
@@ -416,14 +447,14 @@ public class Alphabets1 {
 			System.out.println();
 
 		}
-	}
+	}// y
 
 	public static void yAlphabet() {
-		int n = 7, mid = n / 2;
+		//int n = 7, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == j && mid >= i || i + j == n - 1 && mid >= i || j == mid && mid <= i) {
-					System.out.print("*  ");
+					System.out.print("* ");
 				} else {
 					System.out.print("   ");
 				}
@@ -431,13 +462,14 @@ public class Alphabets1 {
 			}
 			System.out.println();
 		}
-	}
+	}// z
+
 	public static void zAlphabet() {
-		int n = 11, mid = n / 2;
+		//int n = 11, mid = n / 2;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (i == 0 || i + j == n - 1 || i == n - 1) {
-					System.out.print("*  ");
+					System.out.print(" * ");
 				} else {
 					System.out.print("   ");
 				}
